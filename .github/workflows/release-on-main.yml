@@ -9,24 +9,24 @@ jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # nötig für Releases
+      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Hier: deine EXE aus dem Repo in einen dist-Ordner kopieren
-      - name: Prepare artifact
+      - name: Prepare artifacts (.exe files)
         run: |
           mkdir -p dist
-          cp Clar1tyChairs_CS2.exe dist/Clar1tyChairs_CS2.exe
+          # Alle .exe-Dateien im Repo suchen (ohne dist selbst) und nach dist kopieren
+          find . -type f -name "*.exe" ! -path "./dist/*" -exec cp {} dist/ \;
 
-      - name: Create GitHub Release with asset
+      - name: Create GitHub Release with all exe assets
         uses: softprops/action-gh-release@v2
         if: github.ref == 'refs/heads/main'
         with:
-          tag_name: build-${{ github.run_number }}         # einzigartiger Tag
-          name: "Build ${{ github.run_number }}"           # Release-Name
-          files: dist/Clar1tyChairs_CS2.exe                # Asset-Name bleibt fix
+          tag_name: build-${{ github.run_number }}
+          name: "Build ${{ github.run_number }}"
+          files: dist/*.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
