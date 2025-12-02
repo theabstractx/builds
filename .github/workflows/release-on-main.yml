@@ -1,0 +1,32 @@
+name: Release on main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # nötig für Releases
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Hier: deine EXE aus dem Repo in einen dist-Ordner kopieren
+      - name: Prepare artifact
+        run: |
+          mkdir -p dist
+          cp Clar1tyChairs_CS2.exe dist/Clar1tyChairs_CS2.exe
+
+      - name: Create GitHub Release with asset
+        uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/main'
+        with:
+          tag_name: build-${{ github.run_number }}         # einzigartiger Tag
+          name: "Build ${{ github.run_number }}"           # Release-Name
+          files: dist/Clar1tyChairs_CS2.exe                # Asset-Name bleibt fix
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
