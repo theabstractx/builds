@@ -1,0 +1,43 @@
+PRO:
+- fov does not display when menu is open, esp does
+- bomb plant and watermark position are not in config & they should be more towards the top /right top edge of the screen
+- headshot line is bad (mark as beta)
+- aimbot on mb1 doesn't let u buy, its always active
+in the future: aimbot tab config per weapon
+
+
+ESP & PRO:
+- non ascii characters in names get displayed as ?
+- add "adjust bone thickness" when right clicking head/skeleton/box
+- highlight selected menu tabs
+- make new tab icons
+- cleaner tabs
+- change color scheme to fit the new one [later]
+- restructure esp tab
+--> make a show preview toggle that shows the esp preview in another window that is dynamically placed next to the current one
+--> "display" menu with everything around the box (hp bar/number, ammo, distance...) OR below the preview card with enabled/disabled colors 
+--> esp should stretch across both columns, radar (beta) below
+
+
+
+LOADER:
+- display warning to disable windows security features
+--> check for tamper protection enabled, make tutorial of what to disable in windows security
+
+
+OVERALL/SHOP:
+Lower prices:
+day: 2€
+week: 5€
+month: 10€
+life: 30€
+
+new tier: slotted
+-> max 10 players
+-> custom build
+-> different kernel driver (memory read/write method)
+-> priority support
+-> allowed to test new cheats
+
+month: 30
+life: 100
