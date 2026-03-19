@@ -1,9 +1,10 @@
-[2026-03-04 23:55:57] [INFO] === Startup begin ===
-[2026-03-04 23:55:57] [INFO] Keyboard layout detected
-[2026-03-04 23:55:57] [INFO] Loaded default.cfg
-[2026-03-04 23:55:57] [INFO] Configuration initialized successfully
-[2026-03-04 23:55:57] [INFO] Starting launcher GUI
-[2026-03-04 23:56:01] [INFO] Validating CS2 version
-[2026-03-04 23:56:01] [INFO] Initializing game addresses
-[2026-03-04 23:56:01] [INFO] Initializing global variables
-[2026-03-04 23:56:01] [ERROR] Failed to update global vars. Offsets may be outdated.
+[2026-03-13 23:17:15] [INFO] === Startup begin ===
+[2026-03-13 23:17:15] [INFO] Keyboard layout detected
+[2026-03-13 23:17:15] [INFO] Loaded default.cfg
+[2026-03-13 23:17:15] [INFO] Configuration initialized successfully
+[2026-03-13 23:17:15] [INFO] Starting launcher GUI
+[2026-03-13 23:23:16] [INFO] Validating CS2 version
+[2026-03-13 23:23:16] [INFO] Initializing game addresses
+[2026-03-13 23:23:16] [INFO] Initializing global variables
+[2026-03-13 23:23:16] [INFO] Attaching to Counter-Strike 2
+[2026-03-14 00:39:19] [INFO] Cheat overlay closed

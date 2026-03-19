@@ -1,0 +1,7 @@
+[2026-03-13 23:16:34] [INFO] === Startup begin ===
+[2026-03-13 23:16:34] [INFO] Keyboard layout detected
+[2026-03-13 23:16:34] [INFO] Created default.cfg with default settings
+[2026-03-13 23:16:34] [INFO] Loaded default.cfg
+[2026-03-13 23:16:34] [INFO] Configuration initialized successfully
+[2026-03-13 23:16:34] [INFO] Starting launcher GUI
+[2026-03-13 23:16:36] [ERROR] Launcher initialization failed
