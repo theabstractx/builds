@@ -4,7 +4,10 @@ setlocal
 set "BUILD_DIR=%~dp0"
 set "PARENT_DIR=%BUILD_DIR%.."
 
-call :copy_file "%PARENT_DIR%\Clar1tyLoader\build\launcher\Clar1tyLoader.exe" "%BUILD_DIR%Clar1tyLoader.exe"
+call :copy_file "%PARENT_DIR%\Clar1tyLoader\build\debug\Clar1tyLoader.exe" "%BUILD_DIR%Clar1tyLoader_Debug.exe"
+if errorlevel 1 goto :failed
+
+call :copy_file "%PARENT_DIR%\Clar1tyLoader\build\release\Clar1tyLoader.exe" "%BUILD_DIR%Clar1tyLoader.exe"
 if errorlevel 1 goto :failed
 
 call :copy_file "%PARENT_DIR%\cs2_kernel_esp\build\Clar1tyChairs\cs2_kernel_esp.exe" "%BUILD_DIR%cs2_kernel_esp.exe"
